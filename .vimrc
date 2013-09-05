@@ -16,6 +16,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-fugitive'
 "
 " " The bundles you install will be listed here
 "
