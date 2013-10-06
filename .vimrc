@@ -17,6 +17,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'PAntoine/vimgitlog'
 "
 " " The bundles you install will be listed here
 "
@@ -241,3 +242,16 @@ set shiftwidth=4
 set expandtab
 
 let mapleader = ","
+
+" vimgitlog
+let g:GITLOG_default_mode = 2
+map <silent> <f7> :call GITLOG_ToggleWindows()<cr>
+map <silent> <c-f7> :call GITLOG_FlipWindows()<cr>
+
+" vimdiff
+set laststatus=2 "show the status line
+set statusline=%-10.3n  "buffer number
+map <silent> <leader>1 :diffget 1<CR> :diffupdate<CR>
+map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR>
+map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
+map <silent> <leader>4 :diffget 4<CR> :diffupdate<CR>
